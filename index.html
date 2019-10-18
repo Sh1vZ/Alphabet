@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/fullpage.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.js"></script>
+    <script type="text/javascript" src="./assets/fullpage.js"></script>
     <title>Alphabet</title>
 </head>
+
 <body>
-    <p>yeet</p>
+    <div id="fullpage">
+        <div class="section" id="section1">
+                <h1>START PAGE</h1>
+        </div>
+        <div class="section" id="section2">
+            <div class="slide" id="slide1" data-anchor="slide1">
+                <div class="intro">
+                    <h1>TEST</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nesciunt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide2" data-anchor="slide2">
+                <h1>Slide 2</h1>
+            </div>
+
+            <div class="slide" id="slide3" data-anchor="slide3">
+                <h1>Slide 3</h1>
+            </div>
+            <div class="slide" id="slide3" data-anchor="slide3">
+                <h1>Slide 4</h1>
+            </div>
+            <div class="slide" id="slide3" data-anchor="slide3">
+                <h1>Slide 5</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+        });
+    </script>
 </body>
 </html>
